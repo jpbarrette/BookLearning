@@ -1,0 +1,1 @@
+Since I'm using emacs as an editor, most exercises were verified by executing elisp functions
