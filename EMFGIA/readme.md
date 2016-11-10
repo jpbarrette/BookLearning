@@ -1,0 +1,1 @@
+Essential Mathematics for Games and Interactive Applications 2nd Edition
