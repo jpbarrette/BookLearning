@@ -3,23 +3,22 @@ Practice Problem 2.5
 
 Consider the following three calls to show_bytes:
 
-  A. LE:0x21, BE:0x87
-  B. LE:0x2143, BE:0x8765
-  C. LE:0x214365, BE,0x876543
+1. LE:0x21, BE:0x87
+2. LE:0x2143, BE:0x8765
+3. LE:0x214365, BE,0x876543
 
 Practice Problem 2.6
 ====================
 
 3510593 (base-10), int:0x00359141 (base-16), float:0x4a564504
-  A. 
-    * int:  0000 0000 0011 0101 1001 0001 0100 0001
-    * float:0100 1010 0101 0110 0100 0101 0000 0100
 
-  B. 
-    * int:  00000000001101011001000101000001
-    * float:  01001010010101100100010100000100
-
-  C. 21 bits matches
+1. 
+  * int:  0000 0000 0011 0101 1001 0001 0100 0001
+  * float:0100 1010 0101 0110 0100 0101 0000 0100
+2. 
+  * int:  00000000001101011001000101000001
+  * float:  01001010010101100100010100000100
+3. 21 bits matches
   
 Practice Problem 2.7
 =====================
@@ -29,13 +28,13 @@ Practice Problem 2.7
 Practice Problem 2.8
 =====================
 
-a = 0110 1001
-b = 0101 0101
-~a = 1001 0110
-~b = 1010 1010
-a & b = 0100 0001
-a | b = 0111 1101
-a ^ b = 0011 1100
+1. a = 0110 1001
+2. b = 0101 0101
+3. ~a = 1001 0110
+4. ~b = 1010 1010
+5. a & b = 0100 0001
+6. a | b = 0111 1101
+7. a ^ b = 0011 1100
 
 Practice Problem 2.9
 =====================
@@ -53,16 +52,16 @@ A. :
 
 B.
 
-Blue | Green = Cyan
-Yellow & Cyan = Green
-Red ^ Magenta = Blue
+ * Blue | Green = Cyan
+ * Yellow & Cyan = Green
+ * Red ^ Magenta = Blue
 
 Practice Problem 2.10
 ======================
 
- *y = *x ^ *y
- *x = *x ^ *y
- *y = *x ^ *y
+    *y = *x ^ *y
+    *x = *x ^ *y
+    *y = *x ^ *y
 
 1. a = a ^ b
 2. b = (a ^ b) ^ b => b = a ^ (b ^ b) = a ^ 0 = a
@@ -72,16 +71,16 @@ Practice Problem 2.10
 Practice Problem 2.11
 ======================
 
-A. first = last = k + 1
-B. *k ^ *k = 0
-C. Change "for" condition to be first < last instead of first <= last
+1. first = last = k + 1
+2. *k ^ *k = 0
+3. Change "for" condition to be first < last instead of first <= last
 
 Practice Problem 2.12
 ======================
 
-A. x & 0xff
-B. x ^ ~0xff
-C. x | 0xff
+1. x & 0xff
+2. x ^ ~0xff
+3. x | 0xff
 
 Practice Problem 2.13
 ======================
@@ -129,26 +128,26 @@ Practice Problem 2.16
 Practice Problem 2.17
 =====================
 
-0xe = 1110, B2U(0xe) 8 + 4 + 2 = 14, = B2T(0xe) = -8 + 4 + 2 = -2
-0x0 = 0000, B2U9(0x0) = 0, B2T(0x0) = 0
-0x5 = 0101, B2U(0x5) = 4 + 1 = 5, B2T(0x5) = 4 + 1 = 5
-0x8 = 1000, B2U(0x8) = 8, B2T(0x8) = -8
-0xd = 1101, B2U(0xd) = 8 + 4 + 1 = 13, B2T(0xd) = -8 + 4 + 1 = -3
-0xf = 1111, B2U(0xf) = 8 + 4 + 2 + 1 = 15, B2T(0xf) = -8 + 4 + 2 + 1 = -1
+* 0xe = 1110, B2U(0xe) 8 + 4 + 2 = 14, = B2T(0xe) = -8 + 4 + 2 = -2
+* 0x0 = 0000, B2U9(0x0) = 0, B2T(0x0) = 0
+* 0x5 = 0101, B2U(0x5) = 4 + 1 = 5, B2T(0x5) = 4 + 1 = 5
+* 0x8 = 1000, B2U(0x8) = 8, B2T(0x8) = -8
+* 0xd = 1101, B2U(0xd) = 8 + 4 + 1 = 13, B2T(0xd) = -8 + 4 + 1 = -3
+* 0xf = 1111, B2U(0xf) = 8 + 4 + 2 + 1 = 15, B2T(0xf) = -8 + 4 + 2 + 1 = -1
 
 Practice Problem 2.18
 =====================
 
-a. 0x1b8 = 0000 0001 1011 1000 = 2^8 + 2^7 + 2^5 + 2^4 + 2^3 = 256 + 128 + 32 + 16 + 8 = (+ 256 128 32 16 8) = 440
-b. 0x14 = 0001 0100 = 2^5 + 2^3 = 16 + 4 = 20
-c. 0xff ff fe 58 = 0xfe58 = 1111 1110 0101 1000 = Practice = -2^9  + 2^6 + 2^4 + 2^3 = (+ -512 64 16 8) = -424
-d. 0xff ff fe 74 = 0xfe74 = 1111 1110 0111 0100 = -2^9 + 2^6 + 2^5 + 2^4 + 2^2 = (+ -512 64 32 16 4) = -396
-e. 0x44 = 0100 0100 = 2^6 + 2^2 = 64 + 4 = 68 
-f. 0xfffffec8 = 0xfec8 = 1111 1110 1100 1000 = -2^9 + 2^7 + 2^6 + 2^3 = (+ -512 128 64 8) = -312
-g. 0x10 = 0001 0000 = 16
-h. 0xc = 1100 = 2^3 + 2^2 = 12
-i. 0xfffffeec = 0xfeec = 1111 1110 1110 1100 = -2^9 + (2^7 + 2^6...) - ( 2^4 + 2^1 + 2^0) = -2^9 + 255 - (16 + 2 + 1) = (+ -512 255 -19) = -276
-j. 0x20 = 0010 0000 = 32
+* a. 0x1b8 = 0000 0001 1011 1000 = 2^8 + 2^7 + 2^5 + 2^4 + 2^3 = 256 + 128 + 32 + 16 + 8 = (+ 256 128 32 16 8) = 440
+* b. 0x14 = 0001 0100 = 2^5 + 2^3 = 16 + 4 = 20
+* c. 0xff ff fe 58 = 0xfe58 = 1111 1110 0101 1000 = Practice = -2^9  + 2^6 + 2^4 + 2^3 = (+ -512 64 16 8) = -424
+* d. 0xff ff fe 74 = 0xfe74 = 1111 1110 0111 0100 = -2^9 + 2^6 + 2^5 + 2^4 + 2^2 = (+ -512 64 32 16 4) = -396
+* e. 0x44 = 0100 0100 = 2^6 + 2^2 = 64 + 4 = 68 
+* f. 0xfffffec8 = 0xfec8 = 1111 1110 1100 1000 = -2^9 + 2^7 + 2^6 + 2^3 = (+ -512 128 64 8) = -312
+* g. 0x10 = 0001 0000 = 16
+* h. 0xc = 1100 = 2^3 + 2^2 = 12
+* i. 0xfffffeec = 0xfeec = 1111 1110 1110 1100 = -2^9 + (2^7 + 2^6...) - ( 2^4 + 2^1 + 2^0) = -2^9 + 255 - (16 + 2 + 1) = (+ -512 255 -19) = -276
+* j. 0x20 = 0010 0000 = 32
 
 
 Practice Problem 2.19
@@ -222,3 +221,32 @@ Practice Problem 2.24
   3. -7 -> T2U(-7) -> 9 -> 1
   4. -5 -> T2U(-5) -> 11 -> 3
   5. -1 -> T2U(-1) -> 15 -> 1111 -> -1
+
+Practice Problem 2.25
+=====================
+
+1. If length = 0, length - 1 = 0xffffffff = (2^32 - 1), so we go beyond the end of the "a" array.
+2. change the loop condition with "i < length"
+
+Practice Problem 2.26
+=====================
+
+1. when strlen(s) < strlen(t)
+2. when unsigned int - unsigned int returns a negagive number, the unsigned value will always be greater than zero.
+return strlen(s) > strlen(t)
+
+Practice Problem 2.27
+=====================
+
+    int uadd_ok(unsigned x, unsigned y) {
+        return (x + y) >= x;
+    }
+
+Practice Problem 2.28
+=====================
+
+1. 0 = 0, 16 - 0 = 16, 0x0
+2. 5 = 5, 16 - 5 = 11, 0xb
+3. 8 = 8, 16 - 8 = 8, 0x8
+4. D = 13, 16 - 13 = 3, 0x3
+5. F = 15, 16 - 15 = 1, 0x1
