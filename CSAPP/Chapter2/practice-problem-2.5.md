@@ -250,3 +250,25 @@ Practice Problem 2.28
 3. 8 = 8, 16 - 8 = 8, 0x8
 4. D = 13, 16 - 13 = 3, 0x3
 5. F = 15, 16 - 15 = 1, 0x1
+
+Practice Problem 2.29
+=====================
+
+* [10100] + [10001], 20 + 17 = 37
+  * T = -12 + -15 = 100101 = -32 + 4 + 1 = -27 -> 00101 = 5
+* [11000] + [11000], 24 + 24 = 48, -8 + -8 = -16
+  * T = 110000 = -32 + 16 = -16, 10000 = -16
+* [10111] + [01000] = 11111 = T = -1
+* [00010] + [00101] = 00111 = U = T = 4 + 2 + 1 = 7
+* [01100] + [00100] = 10000, U = 16, T = -16
+
+Practice Practice 2.30
+======================
+
+    /* Determine whether arguments can be added without overflow */
+    int tadd_ok(int x, int y) {
+        int sum = x + y;
+        int neg_over = (x < 0 && y < 0 && sum >= 0);
+        int pos_over = (x >= 0 && y >= 0 && sum < 0);
+        return !neg_over && !pos_over;
+    }
