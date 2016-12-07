@@ -262,7 +262,7 @@ Practice Problem 2.29
 * [00010] + [00101] = 00111 = U = T = 4 + 2 + 1 = 7
 * [01100] + [00100] = 10000, U = 16, T = -16
 
-Practice Practice 2.30
+Practice Problem 2.30
 ======================
 
     /* Determine whether arguments can be added without overflow */
@@ -272,3 +272,17 @@ Practice Practice 2.30
         int pos_over = (x >= 0 && y >= 0 && sum < 0);
         return !neg_over && !pos_over;
     }
+
+
+Practice Problem 2.31
+=====================
+
+    int tadd_ok(int x, int y) {
+        int sum = x+y;
+        return (sum-x == y) && (sum-y == x);
+    }
+    
+    x = 120
+    y = 130
+    
+* 120 + 130 = 250 % 128 = 
