@@ -297,3 +297,6 @@ Hex Decimal Binary Decimal Hex
 8   -8      1000   -8, 1000, 8
 D   -3      1101   3, 0011, 3
 F   -1      1111   1, 0001, 1
+
+Web Aside DATA:TNEG
+===================
