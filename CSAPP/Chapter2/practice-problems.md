@@ -6,6 +6,8 @@ Practice Problem 2.1
 3. 0xD5E4C to binary: D:1101, 5:0101, E:1110, 4:0100, C:1100: (eq #xD5E4C #b11010101111001001100)
 4. Binary 1001101110011110110101 to hexadecimal: 0010 0110 1110 0111 1011 0101, 2 6 e 7 b 5, (eq #b1001101110011110110101 #x26e7b5)
 
+Second step:
+
 * 1110 0010 = 226 = -30
 * 1110 1100 = 236 = -20
 * 1100 1110 = (+ -128 64 8 4 2)
@@ -13,7 +15,8 @@ Practice Problem 2.1
 Practice Problem 2.2
 ====================
 
-Fill in the blank entries in the following table, giving the decimal and hexadecimal representations of different powers of 2
+Fill in the blank entries in the following table, giving the decimal and hexadecimal representations of different powers of 2:
+
 * n = 9, 2^9 = 512 (base-10) = 0x200 (base-16)
 * n = 19, 2^19 = 3 + 16 = 3 + 4*4 = 0x80000 = (expt 2 19) 524288
 * n = (log 16384 2) 2^14 (expt 2 14) , 0x4000
@@ -59,12 +62,8 @@ Practice Problem 2.6
 
 3510593 (base-10), int:0x00359141 (base-16), float:0x4a564504
 
-1. 
-  * int:  0000 0000 0011 0101 1001 0001 0100 0001
-  * float:0100 1010 0101 0110 0100 0101 0000 0100
-2. 
-  * int:  00000000001101011001000101000001
-  * float:  01001010010101100100010100000100
+1. int:  0000 0000 0011 0101 1001 0001 0100 0001, float:0100 1010 0101 0110 0100 0101 0000 0100
+2. int:  00000000001101011001000101000001, float:  01001010010101100100010100000100
 3. 21 bits matches
   
 Practice Problem 2.7
@@ -221,7 +220,8 @@ Practice Problem 2.20
 Practice Problem 2.21
 =====================
 
-Expression, Type, Evaluation
+Expression, Type, Evaluation:
+
 1. -2147483647-1 == 2147483648U, unsigned, true
 2. -2147483647-1 < 2147483647, signed, true
 3. -2147483647-1U < 2147483647, unsigned, -2147483647U-1 < 2147483647, 2147483649 -1 < 2147483647  = false
@@ -345,6 +345,4 @@ Hex Decimal Binary Decimal Hex
 D   -3      1101   3, 0011, 3
 F   -1      1111   1, 0001, 1
 
-Web Aside DATA:TNEG
-===================
 
