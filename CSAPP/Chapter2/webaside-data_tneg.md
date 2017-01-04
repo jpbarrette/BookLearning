@@ -25,3 +25,13 @@ int rightmost_one(unsigned x)
 {
     return x & -x;
 }
+
+Practice Problem 5
+==================
+
+* 2147483647 + 1, int, -2147483648, yes
+* 0x7FFFFFFF + 1, int, -2147483648, yes
+* 2147483649 - 1, long long, 2147483648, yes
+* 0x80000001 - 1, unsigned, 2147483648, yes
+* -(2147483649 - 1), long long, 2147483648, yes
+* -(0x80000001 - 1), unsigned, 2147483648, yes
